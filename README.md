@@ -34,10 +34,10 @@ You can run the scripts directly from this repository:
 
 ```bash
 # Tail logs in real-time
-deno run --allow-net --allow-run --allow-env https://raw.githubusercontent.com/username/repo/main/fargate-logs.ts
+deno run --allow-net --allow-run --allow-env https://raw.githubusercontent.com/jiraguha/ecs-logs/main/fargate-logs.ts
 
 # Fetch latest logs
-deno run --allow-net --allow-run --allow-env https://raw.githubusercontent.com/username/repo/main/fargate-latest-logs.ts
+deno run --allow-net --allow-run --allow-env https://raw.githubusercontent.com/jiraguha/ecs-logs/main/fargate-latest-logs.ts
 ```
 
 ### Option 2: Clone the Repository

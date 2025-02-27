@@ -21,7 +21,7 @@ fargate_logs() {
   
   # Run the Deno script from URL
   CLUSTER_NAME="$cluster" SERVICE_NAME="$service" AWS_REGION="$region" \
-  deno run --allow-net --allow-run --allow-env https://raw.githubusercontent.com/username/repo/main/fargate-logs.ts
+  deno run --allow-net --allow-run --allow-env https://raw.githubusercontent.com/jiraguha/ecs-logs/main/fargate-logs.ts
 }
 
 # Function to fetch the latest N logs
@@ -48,7 +48,7 @@ fargate_latest_logs() {
   # Run the Deno script from URL
   CLUSTER_NAME="$cluster" SERVICE_NAME="$service" AWS_REGION="$region" \
   LOG_COUNT="$count" TIME_RANGE_HOURS="$hours" SORT_BY_TIME="$sort" \
-  deno run --allow-net --allow-run --allow-env https://raw.githubusercontent.com/username/repo/main/fargate-latest-logs.ts
+  deno run --allow-net --allow-run --allow-env https://raw.githubusercontent.com/jiraguha/ecs-logs/main/fargate-latest-logs.ts
 }
 
 # Optional: Add autocompletion for your regions, clusters and services
